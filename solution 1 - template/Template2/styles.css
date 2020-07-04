@@ -1,0 +1,200 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0 auto;
+  padding: 0;
+}
+
+.wrapper {
+  font-family:  sans-serif;
+  color: #424242;
+  line-height: 1.4;
+  font-size: 12px;
+}
+
+.directions {
+  margin: 2em auto;
+  max-width: 630px;
+  width: 100%;
+  text-align: center;
+}
+
+.section {
+  margin: 2em auto;
+  max-width: 630px;
+  width: 100%;
+  padding: 1em;
+}
+
+.container {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#fund-head {
+  background-color: #424242;
+  color: #f2f2f2;
+  margin: 0 auto 10px auto;
+  padding: 15px;
+  border-radius: 3px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+#fund-head:after {
+  border-top: 7px solid #424242;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  right: 35px;
+}
+
+#donate-block {
+  border: 1px solid #eaeaea;
+  padding: 0 20px;
+  position: relative;
+  font-size: 0.9em;
+  color: #777;
+  box-sizing: border-box;
+}
+
+.progress {
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #eaeaea;
+  height: 10px;
+  margin: 0 -20px 20px;
+}
+
+.progress:after {
+  content: "";
+  position: absolute;
+  background: #ef5f3c;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 75%;
+  height: 10px;
+  -webkit-animation: filler 2s ease-in-out;
+  animation: filler 2s ease-in-out;
+}
+
+/* ============================= */
+h1 {
+  font-family:  sans-serif;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+a {
+  color: #20a1d4;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.highlight {
+  color: #ef5f3c;
+  font-weight: 800;
+}
+
+input[type="text"] {
+  border-radius: 3px;
+  width: 45%;
+  display: inline-block;
+}
+
+input::-webkit-input-placeholder {
+  font-weight: 600;
+  color: gray;
+}
+
+input::-moz-placeholder {
+  font-weight: 600;
+  color: gray;
+}
+
+input:-ms-input-placeholder {
+  font-weight: 600;
+  color: gray;
+}
+
+input::-ms-input-placeholder {
+  font-weight: 600;
+  color: gray;
+}
+
+input::placeholder {
+  font-weight: 600;
+  color: gray;
+}
+
+.donate-btn {
+  border-radius: 3px;
+  width: 45%;
+  display: inline-block;
+  background-color: #1cbc2c;
+  border: none;
+  padding: 10px;
+  color: #f2f2f2;
+  font-weight: 600;
+  font-size: 1.2em;
+  float: right;
+}
+
+.donate-btn:hover {
+  background-color: #159022;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn {
+  border-radius: 3px;
+  width: 45%;
+  display: inline-block;
+  border: 1px solid #eaeaea;
+  padding: 7px 10px;
+  margin-top: 10px;
+  color: #777;
+  font-weight: 600;
+  font-size: 0.85em;
+  text-align: center;
+}
+
+.btn:hover {
+  color: #f2f2f2;
+  background-color: #1cbc2c;
+}
+
+.right {
+  float: right;
+}
+
+@-webkit-keyframes filler {
+  0% {
+    width: 0;
+  }
+}
+@keyframes filler {
+  0% {
+    width: 0;
+  }
+}
+@media only screen and (max-width: 260px) {
+  input[type="text"] {
+    width: 100%;
+    display: block;
+  }
+
+  .donate-btn,
+  .btn {
+    width: 100%;
+    display: block;
+  }
+}
